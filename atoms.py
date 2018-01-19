@@ -173,9 +173,9 @@ class atom(object):
 class atomMixed(atom):
     """mixed atom
 
-    The atomMixed class is sub class of atomBase and enables mixed atoms for
+    The atomMixed class is sub class of atoms and enables mixed atoms for
     certain alloys and stochiometric mixtures. All properties of the included
-    sub-atoms of class atomBase are averaged and weighted with their
+    sub-atoms of class atoms are averaged and weighted with their
     stochiometric ratio
 
     Attributes:
@@ -230,7 +230,7 @@ class atomMixed(atom):
     def addAtom(self, atom,fraction):
         """addAtom
 
-        Add a atomBase instance with its stochiometric fraction to the
+        Add a atoms instance with its stochiometric fraction to the
         atomMixed instance.
         """
         self.atoms.append([atom, fraction])
